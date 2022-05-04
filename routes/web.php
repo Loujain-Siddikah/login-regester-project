@@ -28,3 +28,6 @@ Route::get('/admin', 'AdminController@index')->name('admin')->middleware('Preven
 
 Route::get('/auth/redirect/{provider}','Auth\SocialiteController@redirect');
 Route::get('/auth/callback/{provider}','Auth\SocialiteController@callback');
+
+Route::get('/','FrontController@GetTemp');
+Route::get('blog.html','FrontController@GetBlog');
