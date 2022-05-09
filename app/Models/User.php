@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable 
+class User extends Authenticatable
 {
     use Notifiable,HasRoles;
 
@@ -16,6 +16,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    //public $guard_name = 'api';
     protected $fillable = [
         'name', 'email','provider_id','avatar','password',
     ];
