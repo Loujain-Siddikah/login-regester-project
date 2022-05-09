@@ -9,7 +9,4 @@ class FrontController extends Controller
     public function GetTemp(){
         return view('landing');
     }
-    public function GetBlog(){
-        return view('blog');
-    }
 }
