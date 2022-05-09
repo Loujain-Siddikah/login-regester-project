@@ -55,7 +55,7 @@
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                             {{ old('remember') ? 'checked' : '' }}>
 
-                                        <label class="form-check-label" for="remember" style="color: blueviolet">
+                                        <label class="form-check-label" for="remember" style="color: #0299D1">
                                             {{ __('Remember Me') }}
                                         </label>
                                     </div>
@@ -66,7 +66,7 @@
                                     <input type="submit" class="butt" value="دخول">
                                     @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}"
-                                        style="color: blueviolet">
+                                        style="color: #0299D1">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                     @endif
